@@ -1,0 +1,9 @@
+h1 {
+  color: red;
+
+  font-family: "Poppins", sans-serif;
+}
+h2,
+p {
+  font-family: "Playfair Display", serif;
+}
