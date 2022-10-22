@@ -1,9 +1,11 @@
 :root {
   --font-family: "Nanum Gothic", sans-serif;
   --primary-color: white;
+  --homepage-color: #202020;
+  --aboutpage-color: #1b1b1b;
 }
-body {
-  background-color: #202020;
+.home {
+  background-color: var(--homepage-color);
 }
 .hero {
   font-family: var(--font-family);
@@ -15,18 +17,7 @@ body {
   background-attachment: fixed;
   background-size: 100%;
 }
-.hero-about {
-  font-family: var(--font-family);
-  text-align: center;
-  color: var(--primary-color);
-  padding: 200px;
-}
-h1 {
-  padding: 20px;
-  font-size: 72px;
-  font-weight: bold;
-  margin-bottom: 25px;
-}
+
 h2 {
   font-size: 24px;
   font-weight: lighter;
@@ -47,7 +38,35 @@ p {
 .image {
   max-width: 100%;
 }
-.picture {
+.picture-home {
+  float: left;
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.about-page {
+  color: var(--primary-color);
+  background-color: var(--aboutpage-color);
+}
+.about-page h1 {
+  margin-left: 20px;
+  font-size: 64px;
+  line-height: 75px;
+  font-weight: bold;
+}
+.about-page h2 {
+  color: #f65282;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.selfie {
+  max-width: 100%;
+  max-height: 100%;
+  filter: grayscale(100%);
+}
+.picture-about {
   float: left;
   height: 400px;
   width: 400px;
