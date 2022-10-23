@@ -1,5 +1,5 @@
 :root {
-  --font-family: "Nanum Gothic", sans-serif;
+  --font-family: "Roboto", sans-serif;
   --primary-color: white;
   --homepage-color: #202020;
   --aboutpage-color: #1b1b1b;
@@ -17,20 +17,19 @@
   background-attachment: fixed;
   background-size: 100%;
 }
-h1 {
+.hero h1 {
   font-size: 72px;
   padding: 10px;
 }
-h2 {
+.hero h2 {
   font-size: 24px;
   font-weight: lighter;
 }
-p {
+.hero p {
   padding: 20px;
   font-size: 18px;
   font-weight: lighter;
 }
-
 .btn-homepage {
   color: var(--primary-color);
   font-size: 18px;
@@ -39,48 +38,13 @@ p {
 .btn-homepage:hover {
   border: 2px solid white;
 }
-.image {
-  max-width: 100%;
-}
+
 .picture-home {
   float: left;
   height: 400px;
   width: 400px;
   object-fit: cover;
-}
-
-.about-page {
-  color: var(--primary-color);
-  background-color: var(--aboutpage-color);
-}
-.about-page h1 {
-  margin-left: 20px;
-  font-size: 64px;
-  line-height: 75px;
-  font-weight: bold;
-}
-.about-page h2 {
-  color: #f65282;
-  font-size: 18px;
-  line-height: 27px;
-}
-
-.selfie {
   max-width: 100%;
-  max-height: 100%;
-  filter: grayscale(100%);
-}
-.picture-about {
-  float: left;
-  height: 400px;
-  width: 400px;
-  object-fit: cover;
-}
-footer {
-  background-color: #282323;
-  color: var(--primary-color);
-  text-align: center;
-  padding: 20px;
 }
 a {
   color: white;
@@ -100,4 +64,65 @@ a:hover {
   body {
     text-align: center;
   }
+}
+
+.about {
+  font-family: var(--font-family);
+  color: var(--primary-color);
+  background-color: var(--aboutpage-color);
+}
+.picture-about {
+  float: left;
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.about h1 {
+  font-size: 64px;
+  line-height: 75px;
+  font-weight: bold;
+}
+.about h2 {
+  color: #f65282;
+  font-size: 18px;
+  line-height: 27px;
+}
+.about p {
+  font-size: 18px;
+  line-height: 27px;
+}
+.about-section {
+  margin-top: 100px;
+}
+.selfie {
+  max-width: 100%;
+  max-height: 100%;
+  filter: grayscale(100%);
+}
+.btn-contact {
+  color: var(--primary-color);
+  font-size: 18px;
+  border: 2px solid white;
+}
+.btn-contact:hover {
+  border: 2px solid white;
+}
+.camera {
+  border: 2px solid var(--homepage-color);
+  padding: 25px;
+  background-color: #2d2727;
+  height: 80px;
+  width: 200px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+footer {
+  background-color: #282323;
+  color: var(--primary-color);
+  text-align: center;
+  padding: 20px;
 }
