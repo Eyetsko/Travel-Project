@@ -81,7 +81,19 @@ a:hover {
   object-fit: cover;
   max-width: 100%;
 }
-
+.work-photo-row {
+  padding: 0 100px 10px 100px;
+}
+.work-full-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+.picture-work {
+  height: 500px;
+  width: 700px;
+  object-fit: cover;
+  max-width: 100%;
+}
 .about h1 {
   font-size: 64px;
   line-height: 75px;
@@ -124,7 +136,27 @@ a:hover {
   border-radius: 4px;
   font-size: 18px;
 }
-
+.work {
+  background-color: var(--homepage-color);
+  font-family: var(--font-family);
+  color: var(--primary-color);
+}
+.work h1 {
+  text-align: center;
+  font-size: 72px;
+  line-height: 85px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 100px;
+}
+.work-photo-row h2 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+img {
+  padding: 10px;
+}
 footer {
   background-color: #282323;
   color: var(--primary-color);
