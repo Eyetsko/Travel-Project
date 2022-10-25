@@ -4,9 +4,12 @@
   --homepage-color: #202020;
   --aboutpage-color: #1b1b1b;
 }
-.home {
-  background-color: var(--homepage-color);
+.content-container {
+  font-family: var(--font-family);
+  color: var(--primary-color);
+  background-color: var(--aboutpage-color);
 }
+
 .hero {
   font-family: var(--font-family);
   text-align: center;
@@ -51,6 +54,7 @@
 }
 a {
   color: white;
+  text-decoration: none;
 }
 a:hover {
   color: black;
@@ -69,11 +73,6 @@ a:hover {
   }
 }
 
-.about {
-  font-family: var(--font-family);
-  color: var(--primary-color);
-  background-color: var(--aboutpage-color);
-}
 .picture-about {
   margin-left: 20px;
   height: 400px;
@@ -136,11 +135,7 @@ a:hover {
   border-radius: 4px;
   font-size: 18px;
 }
-.work {
-  background-color: var(--homepage-color);
-  font-family: var(--font-family);
-  color: var(--primary-color);
-}
+
 .work h1 {
   text-align: center;
   font-size: 72px;
@@ -153,6 +148,26 @@ a:hover {
   font-size: 18px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.contact {
+  padding: 50px 200px 300px 200px;
+  text-align: center;
+}
+.contact h1 {
+  padding-bottom: 20px;
+  font-size: 72px;
+  line-height: 85px;
+  font-weight: bold;
+}
+.contact h2 {
+  color: #f65282;
+  font-size: 14px;
+  line-height: 27px;
+  font-weight: bold;
+}
+.contact p {
+  font-size: 18px;
+  line-height: 27px;
 }
 img {
   padding: 10px;
