@@ -1,48 +1,78 @@
 :root {
   --font-family: "Roboto", sans-serif;
-  --primary-color: white;
-  --homepage-color: #202020;
+  --primary-font-color: white;
+  --primary-color: #202020;
+  --accent-color: #282323;
   --aboutpage-color: #1b1b1b;
+  --accent-color-2: #f65282;
 }
 .content-container {
   font-family: var(--font-family);
-  color: var(--primary-color);
+  color: var(--primary-font-color);
   background-color: var(--aboutpage-color);
 }
 
-.hero {
-  font-family: var(--font-family);
+p {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+img {
+  padding: 10px;
+}
+a {
+  color: var(--primary-font-color);
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+.btn-format {
+  color: var(--primary-font-color);
+  font-size: 18px;
+  border: 2px solid var(--primary-font-color);
+}
+.btn-format:hover {
+  border: 2px solid var(--primary-font-color);
+}
+footer {
+  background-color: var(--accent-color);
+  color: var(--primary-font-color);
   text-align: center;
-  color: var(--primary-color);
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
   padding: 200px;
-  background-image: url(../images/mountains.png);
+  background-image: url(/images/mountains.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
 }
-.hero-content {
-  margin-top: 200px;
-}
+
 .hero h1 {
   font-size: 72px;
   padding: 10px;
 }
 .hero h2 {
+  color: black;
   font-size: 24px;
   font-weight: lighter;
 }
 .hero p {
+  color: black;
   padding: 20px;
-  font-size: 18px;
   font-weight: lighter;
 }
-.btn-homepage {
-  color: var(--primary-color);
+.btn-format {
+  color: var(--primary-font-color);
   font-size: 18px;
-  border: 2px solid white;
+  border: 2px solid var(--primary-font-color);
 }
-.btn-homepage:hover {
-  border: 2px solid white;
+.btn-format:hover {
+  border: 2px solid var(--primary-font-color);
 }
 
 .picture-home {
@@ -52,64 +82,19 @@
   object-fit: cover;
   max-width: 100%;
 }
-a {
-  color: white;
-  text-decoration: none;
-}
-a:hover {
-  color: black;
-  text-decoration: none;
-}
 
-@media (max-width: 900px) {
-  h1 {
-    font-size: 50px;
-  }
-  .hero {
-    background-image: none;
-  }
-  body {
-    text-align: center;
-  }
-}
-
-.picture-about {
-  margin-left: 20px;
-  height: 400px;
-  width: 400px;
-  object-fit: cover;
-  max-width: 100%;
-}
-.work-photo-row {
-  padding: 0 100px 10px 100px;
-}
-.work-full-image {
-  max-width: 100%;
-  max-height: 100%;
-}
-.picture-work {
-  height: 500px;
-  width: 700px;
-  object-fit: cover;
-  max-width: 100%;
+.about-section {
+  margin-top: 100px;
+  margin: 40px;
 }
 .about h1 {
   font-size: 64px;
   line-height: 75px;
   font-weight: bold;
 }
-.about h2 {
-  color: #f65282;
-  font-size: 18px;
+.about h5 {
+  color: var(--accent-color-2);
   line-height: 27px;
-}
-.about p {
-  font-size: 18px;
-  line-height: 27px;
-}
-.about-section {
-  margin-top: 100px;
-  margin: 40px;
 }
 .selfie {
   margin-left: 33px;
@@ -117,23 +102,12 @@ a:hover {
   max-height: 100%;
   filter: grayscale(100%);
 }
-.btn-contact {
-  color: var(--primary-color);
-  font-size: 18px;
-  border: 2px solid white;
-}
-.btn-contact:hover {
-  border: 2px solid white;
-}
-.camera {
-  border: 2px solid var(--homepage-color);
-  padding: 25px;
-  background-color: #2d2727;
-  height: 80px;
-  width: 200px;
-  text-align: center;
-  border-radius: 4px;
-  font-size: 18px;
+.picture-about {
+  margin-left: 20px;
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  max-width: 100%;
 }
 
 .work h1 {
@@ -144,11 +118,26 @@ a:hover {
   padding-top: 10px;
   padding-bottom: 100px;
 }
-.work-photo-row h2 {
-  font-size: 18px;
+
+.work-photo-row {
+  padding: 0 100px 10px 100px;
+}
+.work-photo-row h5 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.work-full-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.picture-work {
+  height: 500px;
+  width: 700px;
+  object-fit: cover;
+  max-width: 100%;
+}
+
 .contact {
   padding: 50px 200px 240px 200px;
   text-align: center;
@@ -160,21 +149,35 @@ a:hover {
   font-weight: bold;
 }
 .contact h2 {
-  color: #f65282;
+  color: var(--accent-color-2);
   font-size: 14px;
   line-height: 27px;
   font-weight: bold;
 }
-.contact p {
-  font-size: 18px;
-  line-height: 27px;
-}
-img {
-  padding: 10px;
-}
-footer {
-  background-color: #282323;
-  color: var(--primary-color);
-  text-align: center;
-  padding: 20px;
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 50px;
+  }
+  .hero {
+    background-image: none;
+  }
+  .hero h2 {
+    color: var(--primary-font-color);
+  }
+  .hero p {
+    color: var(--primary-font-color);
+  }
+  .content-container {
+    text-align: center;
+  }
+  img {
+    margin: 0 auto;
+  }
+  .selfie {
+    display: none;
+  }
+  .about {
+    text-align: center;
+  }
 }
